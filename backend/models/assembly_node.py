@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Text, ForeignKey
 from sqlalchemy.orm import relationship
-from db.base import Base
+from backend.db.base import Base
 
 class AssemblyNode(Base):
     __tablename__ = "assembly_nodes"

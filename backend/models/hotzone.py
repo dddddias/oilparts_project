@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
-from db.base import Base
+from backend.db.base import Base
 
 class Hotzone(Base):
     __tablename__ = "hotzones"

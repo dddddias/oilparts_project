@@ -1,7 +1,7 @@
 # models/part.py
 from sqlalchemy import Column, Integer, String, Text, Numeric, ForeignKey
 from sqlalchemy.orm import relationship
-from db.base import Base
+from backend.db.base import Base
 
 class Part(Base):
     __tablename__ = "parts"

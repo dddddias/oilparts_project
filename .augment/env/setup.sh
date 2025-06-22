@@ -37,7 +37,7 @@ os.environ["DB_PORT"] = "5432"
 os.environ["DB_NAME"] = "test_db"
 
 from main import app
-from db.base import Base
+from backend.db.base import Base
 
 # Create test database
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
@@ -56,7 +56,7 @@ def override_get_db():
         db.close()
 
 # Override the database dependency
-from db.session import SessionLocal
+from backend.db.session import SessionLocal
 from routers.parts import get_db as parts_get_db
 from routers.manufacturers import get_db as manu_get_db
 from routers.assembly_nodes import get_db as nodes_get_db

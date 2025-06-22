@@ -1,6 +1,6 @@
 # create_tables.py
-from db.session import engine
-from db.base import Base
+from backend.db.session import engine
+from backend.db.base import Base
 
 # Импорт моделей для регистрации в metadata
 import models.unit_type

@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from typing import List
 
-from db.session import SessionLocal
+from backend.db.session import SessionLocal
 from models.assembly_node import AssemblyNode
 from schemas.assembly_node import AssemblyNodeCreate, AssemblyNodeRead
 

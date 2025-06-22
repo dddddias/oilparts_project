@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Text
-from db.base import Base
+from backend.db.base import Base
 
 class UnitType(Base):
     __tablename__ = "unit_types"

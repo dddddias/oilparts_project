@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from typing import List
 
-from db.session import SessionLocal
+from backend.db.session import SessionLocal
 from models.manufacturer import Manufacturer
 from schemas.manufacturer import ManufacturerCreate, ManufacturerRead
 
