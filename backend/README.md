@@ -15,7 +15,7 @@ git clone <repo-url>
 cd oilparts_project
 python -m venv venv
 # Windows:
-venv\Scripts\Activate.ps1
+venv\\Scripts\\Activate.ps1
 # macOS/Linux:
 source venv/bin/activate
 pip install -r requirements.txt
@@ -28,3 +28,6 @@ python create_tables.py
 
 # Запустить сервер
 uvicorn main:app --reload
+```
+
+При использовании Docker можно запустить `docker-compose` из каталога `infra`

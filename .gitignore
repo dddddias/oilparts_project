@@ -1,0 +1,12 @@
+# Python
+**/__pycache__/
+*.py[cod]
+venv/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Environment files
+.env
+frontend/.env

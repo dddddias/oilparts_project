@@ -9,6 +9,7 @@ from routers.assembly_nodes import router as nodes_router
 from routers.manufacturers  import router as manu_router
 from routers.parts          import router as parts_router
 from routers.orders         import router as orders_router
+from routers.hotzones       import router as hotzones_router
 
 app = FastAPI(
     title="Oil & Gas Parts API",
@@ -42,27 +43,12 @@ async def health_check():
 
 # ─────────────── Роутеры ─────────────────
 # Каждый из этих роутеров должен быть правильно определён в папке backend/routers
-app.include_router(unit_types_router,   prefix="/unit_types",      tags=["unit_types"])
-app.include_router(nodes_router,        prefix="/assembly_nodes",  tags=["assembly_nodes"])
-app.include_router(manu_router,         prefix="/manufacturers",    tags=["manufacturers"])
-app.include_router(parts_router,        prefix="/parts",            tags=["parts"])
-app.include_router(orders_router,       prefix="/orders",           tags=["orders"])
-# ─────────────────────────────────────────
 
-
-from routers.hotzones import router as hotzones_router
-
-app.include_router(
-    hotzones_router,
-    prefix="/hotzones",
-    tags=["hotzones"],
-)
 
 app.include_router(unit_types_router,   prefix="/unit_types",     tags=["unit_types"])
 app.include_router(nodes_router,        prefix="/assembly_nodes", tags=["assembly_nodes"])
-app.include_router(manu_router,         prefix="/manufacturers",  tags=["manufacturers"])
-app.include_router(parts_router,        prefix="/parts",          tags=["parts"])
-app.include_router(orders_router,       prefix="/orders",         tags=["orders"])
-app.include_router(hotzones_router,     prefix="/hotzones",       tags=["hotzones"])
-
+app.include_router(manu_router,         prefix="/manufacturers", tags=["manufacturers"])
+app.include_router(parts_router,        prefix="/parts",         tags=["parts"])
+app.include_router(orders_router,       prefix="/orders",        tags=["orders"])
+app.include_router(hotzones_router,     prefix="/hotzones",      tags=["hotzones"])
 

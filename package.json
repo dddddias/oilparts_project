@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "react-router-dom": "^7.6.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
