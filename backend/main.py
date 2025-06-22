@@ -4,12 +4,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 # Здесь мы подключаем все ваши роутеры
-from routers.unit_types     import router as unit_types_router
-from routers.assembly_nodes import router as nodes_router
-from routers.manufacturers  import router as manu_router
-from routers.parts          import router as parts_router
-from routers.orders         import router as orders_router
-from routers.hotzones       import router as hotzones_router
+from backend.routers.unit_types    import router as unit_types_router
+from backend.routers.assembly_nodes import router as nodes_router
+from backend.routers.manufacturers  import router as manu_router
+from backend.routers.parts          import router as parts_router
+from backend.routers.orders         import router as orders_router
+from backend.routers.hotzones       import router as hotzones_router
+
 
 app = FastAPI(
     title="Oil & Gas Parts API",
