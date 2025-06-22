@@ -10,6 +10,3 @@ frontend/node_modules/
 # Environment files
 .env
 frontend/.env
-# Temporary test files
-backend/Untitled-1.txt
-backend/cd\ frontend\ \&\&\ npm\ test\ --passWithNoTest.txt
