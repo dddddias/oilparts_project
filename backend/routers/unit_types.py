@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from typing import List
 
-from backend.db.session import SessionLocal
+from db.session import SessionLocal
 from models.unit_type import UnitType
 
 router = APIRouter(prefix="/unit_types", tags=["unit_types"])
