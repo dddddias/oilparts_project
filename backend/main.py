@@ -45,10 +45,10 @@ async def health_check():
 # Каждый из этих роутеров должен быть правильно определён в папке backend/routers
 
 
-app.include_router(unit_types_router,   prefix="/unit_types",     tags=["unit_types"])
-app.include_router(nodes_router,        prefix="/assembly_nodes", tags=["assembly_nodes"])
-app.include_router(manu_router,         prefix="/manufacturers", tags=["manufacturers"])
-app.include_router(parts_router,        prefix="/parts",         tags=["parts"])
-app.include_router(orders_router,       prefix="/orders",        tags=["orders"])
-app.include_router(hotzones_router,     prefix="/hotzones",      tags=["hotzones"])
+app.include_router(unit_types_router,   tags=["unit_types"])
+app.include_router(nodes_router,        tags=["assembly_nodes"])
+app.include_router(manu_router,         tags=["manufacturers"])
+app.include_router(parts_router,        tags=["parts"])
+app.include_router(orders_router,       tags=["orders"])
+app.include_router(hotzones_router,     tags=["hotzones"])
 

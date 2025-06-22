@@ -4,7 +4,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from typing import List
 
-from db.session import SessionLocal
+from backend.db.session import SessionLocal
 from models.hotzone import Hotzone
 from schemas.hotzone import HotzoneCreate, HotzoneRead
 
