@@ -1,5 +1,5 @@
 # create_tables.py
-from backend.db.session import engine
+from db.session import engine
 from backend.db.base import Base
 
 # Импорт моделей для регистрации в metadata

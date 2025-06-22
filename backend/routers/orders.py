@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from decimal import Decimal
 from typing import List
 
-from backend.db.session import SessionLocal
+from db.session import SessionLocal
 from models.order import Order
 from models.order_item import OrderItem
 from models.part import Part                           # ← импортируем Part
